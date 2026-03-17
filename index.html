@@ -12,6 +12,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+<style>
+
 body{
 font-family: 'Inter', sans-serif;
 }
@@ -19,6 +21,101 @@ font-family: 'Inter', sans-serif;
 h1,h2,h3{
 font-family: 'Playfair Display', serif;
 }
+
+/* HERO SECTION */
+
+.hero{
+padding:100px 20px 60px;
+text-align:center;
+background:#f7f2e7;
+}
+
+.hero-images{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+margin-bottom:50px;
+flex-wrap:wrap;
+}
+
+.blob{
+width:160px;
+height:160px;
+object-fit:cover;
+border-radius:40% 60% 55% 45% / 60% 40% 60% 40%;
+transition:transform .3s ease;
+}
+
+.blob:hover{
+transform:scale(1.05);
+}
+
+.border-blue{
+border:6px solid #8cc6d6;
+padding:6px;
+background:white;
+}
+
+.border-orange{
+border:6px solid #f19a6b;
+padding:6px;
+background:white;
+}
+
+.hero-content{
+max-width:900px;
+margin:auto;
+}
+
+.hero h1{
+font-size:56px;
+font-weight:700;
+margin-bottom:24px;
+line-height:1.2;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.6;
+margin-bottom:32px;
+color:#444;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.btn-primary{
+background:#f19a6b;
+padding:14px 28px;
+border-radius:10px;
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-primary:hover{
+opacity:.9;
+}
+
+.btn-secondary{
+background:#8cc6d6;
+padding:14px 28px;
+border-radius:10px;
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-secondary:hover{
+opacity:.9;
+}
+
+</style>
 </style>
 
 </head>
@@ -51,19 +148,17 @@ The Thought Space
 
 <div class="hero-images">
 
-<a href="#"><img src="img1.jpg" class="blob blob1"></a>
-<a href="#"><img src="img2.jpg" class="blob blob2 border-blue"></a>
-<a href="#"><img src="img3.jpg" class="blob blob3 border-orange"></a>
-<a href="#"><img src="img4.jpg" class="blob blob4"></a>
-<a href="#"><img src="img5.jpg" class="blob blob5"></a>
+<a href="#"><img src="img1.jpg" class="blob"></a>
+<a href="#"><img src="img2.jpg" class="blob border-blue"></a>
+<a href="#"><img src="img3.jpg" class="blob border-orange"></a>
+<a href="#"><img src="img4.jpg" class="blob"></a>
+<a href="#"><img src="img5.jpg" class="blob"></a>
 
 </div>
 
 <div class="hero-content">
 
-<h1>
-Holistic therapy for healing & well-being
-</h1>
+<h1>Holistic therapy for healing & well-being</h1>
 
 <p>
 In-person psychotherapy in Rockland for individuals, couples, children and teens. 
@@ -77,39 +172,6 @@ L’Orignal, Hawkesbury, and virtual across Ontario.
 <a href="#" class="btn-secondary">Our team</a>
 
 </div>
-
-</div>
-
-</section>
-  
-<section class="py-24 px-6">
-
-<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-
-<div>
-
-<h1 class="text-4xl md:text-5xl mb-6 leading-tight">
-
-A Space Where You Can  
-<span class="text-[#a87c55]">Live Without Judgment</span>
-
-</h1>
-
-<p class="text-lg mb-8">
-
-The Thought Space is rooted in acceptance and compassion, helping individuals cultivate the endurance and patience needed to navigate life’s challenges.
-
-</p>
-
-<a href="#" class="bg-[#a87c55] text-white px-8 py-3 rounded-lg hover:opacity-90">
-
-Reach Out To Us
-
-</a>
-
-</div>
-
-<img src="hero.jpg" class="rounded-xl shadow-lg">
 
 </div>
 
