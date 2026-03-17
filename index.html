@@ -171,6 +171,55 @@ font-weight:600;
 text-decoration:none;
 }
 
+/* CHIP MARQUEE */
+
+.chip-marquee{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+overflow:hidden;
+background:#efe9e2;
+padding:14px 0;
+}
+
+.chip-track{
+display:flex;
+gap:20px;
+width:max-content;
+animation:scrollChips 30s linear infinite;
+}
+
+.chip{
+display:flex;
+align-items:center;
+gap:8px;
+background:white;
+padding:10px 18px;
+border-radius:999px;
+font-size:14px;
+color:#6a4a3b;
+white-space:nowrap;
+box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+.chip-star{
+color:#f19a6b;
+font-size:14px;
+}
+
+@keyframes scrollChips{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
 </style>
 
 </head>
@@ -235,6 +284,68 @@ L’Orignal, Hawkesbury, and virtual across Ontario.
 <!-- ABOUT -->
 
   <section class="healing-section">
+
+    <section class="healing-section">
+
+<!-- scrolling chips -->
+
+<div class="chip-marquee">
+
+<div class="chip-track">
+
+<div class="chip"><span class="chip-star">✦</span>Understand your needs</div>
+<div class="chip"><span class="chip-star">✦</span>Build meaningful connections</div>
+<div class="chip"><span class="chip-star">✦</span>Embrace self-love</div>
+<div class="chip"><span class="chip-star">✦</span>Overcome trauma</div>
+
+<div class="chip"><span class="chip-star">✦</span>Understand your needs</div>
+<div class="chip"><span class="chip-star">✦</span>Build meaningful connections</div>
+<div class="chip"><span class="chip-star">✦</span>Embrace self-love</div>
+<div class="chip"><span class="chip-star">✦</span>Overcome trauma</div>
+
+</div>
+
+</div>
+
+<div class="healing-container">
+
+<div>
+
+<h2 class="healing-title">
+Begin your journey to healing & self-love
+</h2>
+
+</div>
+
+<div>
+
+<p class="healing-text">
+At Bien-être Counselling, we are dedicated to helping you regain control of your life and improve your mental health. Whether you're experiencing anxiety, trapped in negative thought patterns, or dealing with ADHD, PTSD, or depression, our compassionate therapists are here to support you.
+</p>
+
+<ul class="healing-list">
+
+<li><span class="healing-dot">→</span> Experiencing anxiety, stress, or overwhelm?</li>
+<li><span class="healing-dot">→</span> Trapped in negative thought patterns?</li>
+<li><span class="healing-dot">→</span> Dealing with ADHD, PTSD, or depression?</li>
+<li><span class="healing-dot">→</span> Facing challenges in your relationship?</li>
+<li><span class="healing-dot">→</span> Finding it hard to manage your emotions?</li>
+
+</ul>
+
+<p style="margin-top:25px;font-weight:500">
+We accept Medavie insurance
+</p>
+
+<a href="#" class="book-btn">
+Book now ↗
+</a>
+
+</div>
+
+</div>
+
+</section>
 
 <div class="healing-container">
 
