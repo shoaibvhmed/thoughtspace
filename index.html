@@ -220,6 +220,69 @@ transform:translateX(-50%);
 
 }
 
+/* INFO CARDS SECTION */
+
+.info-section{
+background:linear-gradient(
+to bottom,
+#e9e1d8 50%,
+#c7d6db 50%
+);
+padding:80px 20px;
+}
+
+.info-container{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:24px;
+}
+
+.info-card{
+background:#f4f1ed;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+transition:transform .2s ease;
+}
+
+.info-card:hover{
+transform:translateY(-5px);
+}
+
+.info-icon{
+font-size:26px;
+color:#f19a6b;
+margin-bottom:12px;
+}
+
+.info-title{
+font-weight:700;
+font-size:20px;
+margin-bottom:10px;
+}
+
+.info-text{
+color:#5c4033;
+font-size:15px;
+line-height:1.6;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+.info-container{
+grid-template-columns:1fr 1fr;
+}
+}
+
+@media(max-width:500px){
+.info-container{
+grid-template-columns:1fr;
+}
+}
+
 </style>
 
 </head>
@@ -343,7 +406,45 @@ Book now ↗
 
 </section>
 
-  
+<section class="info-section">
+
+<div class="info-container">
+
+<div class="info-card">
+<div class="info-icon">👥</div>
+<div class="info-title">In-person & virtual</div>
+<div class="info-text">
+We work with Individuals & couples across Ontario.
+</div>
+</div>
+
+<div class="info-card">
+<div class="info-icon">🗓️</div>
+<div class="info-title">Appointments</div>
+<div class="info-text">
+Day, Evening & Weekend appointments.
+</div>
+</div>
+
+<div class="info-card">
+<div class="info-icon">🛡️</div>
+<div class="info-title">Insurance</div>
+<div class="info-text">
+Accepted by most major insurance plan providers.
+</div>
+</div>
+
+<div class="info-card">
+<div class="info-icon">🅿️</div>
+<div class="info-title">Visiting</div>
+<div class="info-text">
+Free parking for in-person appointments.
+</div>
+</div>
+
+</div>
+
+</section>
 
 <section class="py-20 bg-white">
 
